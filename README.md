@@ -16,5 +16,9 @@ Directions on how for user testing.
 -The application provides reports on the total number of customer reports by type and month, and an appointment schedule of each contact in the organization, and this can be viewed by clicking on the reporting button located on the main menu. 
 -User login attempts, date, and time stamps and whether each attempt was successfully is tracked and logged in a file named login_activity.txt. 
 -An additional reporting interface that displays customer name, start and end time of their appointment was also implemented. 
+
+Video Walkthrough
+
+![Kapture 2021-02-15 at 09 01 29](https://user-images.githubusercontent.com/63765884/107964766-9fef8d00-6f77-11eb-85ce-448e835dbf3f.gif)
  
 
