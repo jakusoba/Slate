@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SecondReportController">
+    <children>
+        <HBox alignment="CENTER" layoutY="-2.0" prefHeight="100.0" prefWidth="855.0">
+            <children>
+                <Label fx:id="secondReportTitle" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="29.0" prefWidth="373.0" text="Contact Appointment Schedule" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <VBox alignment="CENTER" layoutY="79.0" prefHeight="432.0" prefWidth="1000.0">
+            <children>
+                <TableView fx:id="contactsTableView" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="319.0" prefWidth="978.0">
+               <columns>
+                  <TableColumn fx:id="appIDColumn" prefWidth="96.0" text="Appointment_ID" />
+                  <TableColumn fx:id="titleColumn" prefWidth="103.0" text="Title" />
+                  <TableColumn fx:id="typeColumn" prefWidth="144.0" text="Type" />
+                  <TableColumn fx:id="descColumn" prefWidth="157.0" text="Description" />
+                  <TableColumn fx:id="startColumn" prefWidth="143.0" text="Start" />
+                  <TableColumn fx:id="endColumn" prefWidth="146.0" text="End" />
+                  <TableColumn fx:id="custColumn" prefWidth="81.0" text="Customer_ID" />
+                  <TableColumn fx:id="contactColumn" prefWidth="107.0" text="Contact_ID" />
+               </columns>
+                </TableView>
+            </children>
+        </VBox>
+        <VBox alignment="CENTER_RIGHT" layoutY="497.0" prefHeight="100.0" prefWidth="855.0">
+            <children>
+                <Button fx:id="backBTN" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#returnReports" prefHeight="50.0" prefWidth="200.0" text="Back" textFill="#7f3290">
+                    <VBox.margin>
+                        <Insets right="30.0" />
+                    </VBox.margin>
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

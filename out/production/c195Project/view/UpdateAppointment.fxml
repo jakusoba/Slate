@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="638.0" prefWidth="586.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateAppointmentController">
+    <children>
+        <HBox alignment="CENTER" prefHeight="51.0" prefWidth="500.0">
+            <children>
+                <Label text="Update Appointment" textFill="WHITE">
+                    <font>
+                        <Font name="Arial" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox layoutY="94.0" prefHeight="322.0" prefWidth="450.0">
+            <children>
+                <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="324.0" prefWidth="200.0">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="75.0" prefWidth="200.0">
+                            <children>
+                                <Label text="Appointment_ID:" textFill="WHITE">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font></Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="75.0" prefWidth="200.0">
+                            <children>
+                                <Label text="Contact ID:" textFill="WHITE">
+                                    <font>
+                                        <Font name="Arial" size="14.0" />
+                                    </font></Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="75.0" prefWidth="200.0">
+                            <children>
+                                <Label text="User_ID:" textFill="WHITE">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font></Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="202.0" prefHeight="75.0" prefWidth="200.0">
+                            <children>
+                                <Label text="Appointment Title:" textFill="WHITE">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font></Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="202.0" prefHeight="75.0" prefWidth="200.0">
+                            <children>
+                                <Label text="Appointment Description:" textFill="WHITE">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font></Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="202.0" prefHeight="75.0" prefWidth="200.0">
+                            <children>
+                                <Label text="Appointment Location:" textFill="WHITE">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font></Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="202.0" prefHeight="75.0" prefWidth="200.0">
+                            <children>
+                                <Label text="Appointment Type:" textFill="WHITE">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font></Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="202.0" prefHeight="75.0" prefWidth="200.0">
+                            <children>
+                                <Label text="Customer_ID:" textFill="WHITE">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font></Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="75.0" prefWidth="200.0">
+                            <children>
+                                <Label text="Appointment Start Date:" textFill="WHITE">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font></Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="75.0" prefWidth="200.0">
+                            <children>
+                                <Label text="Appointment Start Time:" textFill="WHITE">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font></Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="202.0" prefHeight="75.0" prefWidth="200.0">
+                            <children>
+                                <Label text="Appointment End Date:" textFill="WHITE">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font></Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="278.0" prefHeight="75.0" prefWidth="200.0">
+                            <children>
+                                <Label text="Appointment End Time:" textFill="WHITE">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font></Label>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox maxHeight="-Infinity" prefHeight="324.0" prefWidth="250.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="appointment_ID" editable="false" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <ComboBox fx:id="contactID_combo" editable="true" prefWidth="160.0" promptText="Please select" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <ComboBox fx:id="userID_combo" editable="true" prefWidth="160.0" promptText="Please select" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="apptTitle_txt" promptText="Appointment title" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="apptDesc_txt" promptText="Appointment Description" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="apptLocation_txt" promptText="Appointment Location" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="apptType_txt" promptText="Appointment Type" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="customerID" promptText="Customer ID" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <DatePicker fx:id="startDate_dp" maxWidth="-Infinity" prefWidth="160.0" promptText="Start Date" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <ComboBox fx:id="start_combo" editable="true" prefWidth="160.0" promptText="Please select" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0" />
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="200.0" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <DatePicker fx:id="endDate_dp" maxWidth="-Infinity" prefWidth="160.0" promptText="End Date" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="278.0" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <ComboBox fx:id="end_combo" editable="true" prefWidth="160.0" promptText="Please select" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" layoutY="529.0" prefHeight="105.0" prefWidth="450.0">
+            <children>
+                <Button fx:id="save_btn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#saveAppt" prefHeight="34.0" prefWidth="100.0" text="Save">
+                    <HBox.margin>
+                        <Insets right="15.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="cancel_btn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#cancel" prefHeight="32.0" prefWidth="100.0" text="Cancel">
+                    <HBox.margin>
+                        <Insets right="15.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
